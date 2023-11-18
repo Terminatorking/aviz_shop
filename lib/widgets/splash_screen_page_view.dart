@@ -1,4 +1,5 @@
 import 'package:avizshop/constants/colors.dart';
+import 'package:avizshop/widgets/tag_widget.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreenPageView extends StatelessWidget {
@@ -23,12 +24,12 @@ class SplashScreenPageView extends StatelessWidget {
               const SizedBox(
                 height: 50,
               ),
-              Directionality(
+              const Directionality(
                 textDirection: TextDirection.rtl,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text(
+                     Text(
                       "اینجا محل ",
                       style: TextStyle(
                         fontFamily: "shabnam",
@@ -36,38 +37,11 @@ class SplashScreenPageView extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: grey,
-                      ),
-                      child: Row(
-                        children: [
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          Image.asset("assets/images/tags.png"),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          Text(
-                            "آویز",
-                            style: TextStyle(
-                              fontFamily: "shabnam",
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: red,
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(
+                    TagWidget(),
+                     SizedBox(
                       width: 10,
                     ),
-                    const Text(
+                     Text(
                       "اگهی شماست",
                       style: TextStyle(
                         fontFamily: "shabnam",

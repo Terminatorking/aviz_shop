@@ -1,4 +1,5 @@
 import 'package:avizshop/constants/colors.dart';
+import 'package:avizshop/screens/entrance_screen.dart';
 import 'package:avizshop/widgets/splash_screen_page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -53,7 +54,16 @@ class SplashScreen extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const EntranceScreen(isEntrance: false);
+                          },
+                        ),
+                      );
+                    },
                   ),
                 ),
                 SizedBox(
@@ -75,7 +85,18 @@ class SplashScreen extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const EntranceScreen(
+                              isEntrance: true,
+                            );
+                          },
+                        ),
+                      );
+                    },
                   ),
                 ),
               ],
