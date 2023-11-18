@@ -1,4 +1,5 @@
 import 'package:avizshop/constants/colors.dart';
+import 'package:avizshop/screens/mainscreen.dart';
 import 'package:flutter/material.dart';
 
 class ConfirmPhoneNumber extends StatelessWidget {
@@ -91,10 +92,19 @@ class ConfirmPhoneNumber extends StatelessWidget {
                       color: white,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return const MainScreen();
+                        },
+                      ),
+                    );
+                  },
                 ),
               ),
-             const SizedBox(
+              const SizedBox(
                 height: 50,
               ),
             ],
