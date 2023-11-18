@@ -1,4 +1,5 @@
 import 'package:avizshop/constants/colors.dart';
+import 'package:avizshop/screens/confirm_phone_number.dart';
 import 'package:avizshop/widgets/tag_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -69,7 +70,7 @@ class EntranceScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Visibility(
@@ -124,7 +125,18 @@ class EntranceScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return  ConfirmPhoneNumber(
+                            isEntrance: isEntrance ? true : false,
+                          );
+                        },
+                      ),
+                    );
+                  },
                 ),
               ),
               Row(
@@ -141,7 +153,27 @@ class EntranceScreen extends StatelessWidget {
                     ),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      if (isEntrance) {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const EntranceScreen(isEntrance: false);
+                            },
+                          ),
+                        );
+                      } else {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const EntranceScreen(isEntrance: true);
+                            },
+                          ),
+                        );
+                      }
+                    },
                     child: Text(
                       isEntrance ? "ثبت نام" : "ورود",
                       style: TextStyle(
