@@ -79,10 +79,10 @@ class _MainScreenState extends State<MainScreen> {
           child: IndexedStack(
             index: selectedIndex,
             children: const [
-              ProfileScreen(),
-              AddAviz(),
-              SearchScreen(),
               HomeScreen(),
+              SearchScreen(),
+              AddAviz(),
+              ProfileScreen(),
             ],
           ),
         ),
