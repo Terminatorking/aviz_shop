@@ -21,6 +21,7 @@ class _MainScreenState extends State<MainScreen> {
       child: Scaffold(
         backgroundColor: white,
         bottomNavigationBar: BottomNavigationBar(
+          iconSize: 30,
           backgroundColor: Colors.red,
           elevation: 0,
           currentIndex: selectedIndex,
@@ -46,9 +47,9 @@ class _MainScreenState extends State<MainScreen> {
           },
           items: [
             BottomNavigationBarItem(
-              icon: Padding(
-                padding: const EdgeInsets.all(5.0),
-                child: Image.asset("assets/images/tags.png"),
+              icon: Icon(
+                Icons.home,
+                color: selectedIndex == 0 ? red : Colors.grey.shade400,
               ),
               label: 'آویز اگهی ها',
             ),
