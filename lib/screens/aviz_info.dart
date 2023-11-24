@@ -205,7 +205,7 @@ class _AvizInfoState extends State<AvizInfo>
                 TabsWidget(tabController: tabController),
                 SizedBox(
                   width: widget.size.width,
-                  height: widget.size.height / 2,
+                  height: widget.size.height / 1.8,
                   child: TabBarView(
                     controller: tabController,
                     children: [

@@ -111,8 +111,8 @@ class RecentAviz extends StatelessWidget {
               ],
             ),
             Container(
-              margin: const EdgeInsets.all(15),
-              width: 120,
+              margin: const EdgeInsets.only(left: 15),
+              width: 100,
               height: 100,
               decoration: BoxDecoration(
                 color: white,

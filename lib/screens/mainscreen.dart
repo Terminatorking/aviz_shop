@@ -3,6 +3,7 @@ import 'package:avizshop/screens/add_aviz.dart';
 import 'package:avizshop/screens/home_screen.dart';
 import 'package:avizshop/screens/profile_screen.dart';
 import 'package:avizshop/screens/search_screen.dart';
+
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
