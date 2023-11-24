@@ -11,6 +11,11 @@ class RegisterAvizScreen extends StatefulWidget {
 
 class _RegisterAvizScreenState extends State<RegisterAvizScreen> {
   bool isChange = false;
+  bool isChange2 = false;
+  bool isChange3 = false;
+  bool isChange4 = false;
+  bool isChange5 = false;
+  bool isChange6 = false;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -457,11 +462,11 @@ class _RegisterAvizScreenState extends State<RegisterAvizScreen> {
                           activeColor: red,
                           inactiveTrackColor: Colors.grey.shade200,
                           thumbColor: MaterialStateProperty.all(white),
-                          value: isChange,
+                          value: isChange2,
                           onChanged: (b) {
                             setState(
                               () {
-                                isChange = !isChange;
+                                isChange2 = !isChange2;
                               },
                             );
                           },
@@ -501,11 +506,11 @@ class _RegisterAvizScreenState extends State<RegisterAvizScreen> {
                           activeColor: red,
                           inactiveTrackColor: Colors.grey.shade200,
                           thumbColor: MaterialStateProperty.all(white),
-                          value: isChange,
+                          value: isChange3,
                           onChanged: (b) {
                             setState(
                               () {
-                                isChange = !isChange;
+                                isChange3 = !isChange3;
                               },
                             );
                           },
@@ -598,11 +603,11 @@ class _RegisterAvizScreenState extends State<RegisterAvizScreen> {
                           activeColor: red,
                           inactiveTrackColor: Colors.grey.shade200,
                           thumbColor: MaterialStateProperty.all(white),
-                          value: isChange,
+                          value: isChange4,
                           onChanged: (b) {
                             setState(
                               () {
-                                isChange = !isChange;
+                                isChange4 = !isChange4;
                               },
                             );
                           },
@@ -813,7 +818,7 @@ class _RegisterAvizScreenState extends State<RegisterAvizScreen> {
                       const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Text(
-                         "فعال کردن گفت و گو",
+                          "فعال کردن گفت و گو",
                           style: TextStyle(
                             fontFamily: "shabnam",
                             fontSize: 16,
@@ -828,11 +833,11 @@ class _RegisterAvizScreenState extends State<RegisterAvizScreen> {
                           activeColor: red,
                           inactiveTrackColor: Colors.grey.shade200,
                           thumbColor: MaterialStateProperty.all(white),
-                          value: isChange,
+                          value: isChange5,
                           onChanged: (b) {
                             setState(
                               () {
-                                isChange = !isChange;
+                                isChange5 = !isChange5;
                               },
                             );
                           },
@@ -857,7 +862,7 @@ class _RegisterAvizScreenState extends State<RegisterAvizScreen> {
                       const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Text(
-                        "فعال کردن امکان تماس",
+                          "فعال کردن امکان تماس",
                           style: TextStyle(
                             fontFamily: "shabnam",
                             fontSize: 16,
@@ -872,11 +877,11 @@ class _RegisterAvizScreenState extends State<RegisterAvizScreen> {
                           activeColor: red,
                           inactiveTrackColor: Colors.grey.shade200,
                           thumbColor: MaterialStateProperty.all(white),
-                          value: isChange,
+                          value: isChange6,
                           onChanged: (b) {
                             setState(
                               () {
-                                isChange = !isChange;
+                                isChange6 = !isChange6;
                               },
                             );
                           },
