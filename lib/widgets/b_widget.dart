@@ -48,7 +48,7 @@ class Bwidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 15),
             child: Icon(
-              Icons.arrow_forward,
+              Icons.arrow_forward_ios,
               color: red,
             ),
           )
