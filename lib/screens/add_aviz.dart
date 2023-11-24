@@ -1,3 +1,4 @@
+import 'package:avizshop/screens/register_aviz_screen.dart';
 import 'package:avizshop/widgets/b_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:avizshop/constants/colors.dart';
@@ -38,9 +39,23 @@ class AddAviz extends StatelessWidget {
               height: 20,
             ),
             for (int i = 0; i < 6; i++)
-              Bwidget(
-                size: size,
-                text: texts[i],
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return RegisterAvizScreen(
+                          size: size,
+                        );
+                      },
+                    ),
+                  );
+                },
+                child: Bwidget(
+                  size: size,
+                  text: texts[i],
+                ),
               ),
           ],
         ),
